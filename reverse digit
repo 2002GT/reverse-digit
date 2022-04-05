@@ -1,0 +1,18 @@
+long long int reverse_digit(long long int n)
+		{
+		    long long int rev=0;
+		    int x=0,flag=0;
+		    if(n<0){
+		        n=(-1)*n;
+		        flag=1;
+		    }
+		    while(n>0){
+		        x=n%10;
+		        rev=rev*10+x;
+		        n=n/10;
+		    }
+		    if(flag==1)
+		        rev=(-1)*n;
+		  
+		  return rev;
+		}
